@@ -4,49 +4,42 @@
 <head>
     <meta charset="utf-8" />
     <title> Employee Survey Form</title>
-
-
 <style>
-body {background-color: linen;
+body {
+    background-color: linen;
       text-align: center;
-      font-family:courier;}
+      font-family:courier;
+    padding: 0;
+    margin:0;
+    }
 
-h1 {color: maroon; text-align:center; font-family:courier;}
-
-form {display: inline-block;}
-
-textarea {background-color: #FADBD8;}
-
-
+h1 {
+    color: maroon; text-align:center; font-family:courier;
+    }
+    form {
+        display: inline-block;
+    }
+textarea {
+    background-color: #FADBD8;
+    }
 </style>
-
-
-
 </head>
 <body>
-
-
 <h1> Employee Survey </h1>
-
 <form action="/action_page.php">
-  
   <p style="font-weight: bold;"> Please enter your First and last name</p>
-
   <label for="fname">  First name:</label><br>
   <input type="text" id="fname" name="fname"  maxlength="20" size="35"><br>
   <label for="lname">Last name:</label><br>
   <input type="text" id="lname" name="lname" maxlength="20" size="35"><br><br>
   <label for="w3review">Please express your views about office working environment</label><br><br>
-
   <textarea id="Express Your views" name="Express Your Views"  rows="4" cols="30">
   </textarea>
-
   <p style = "font-style: italic;" >Do you actively participate in sport activities?</p>
   <input type="radio" id="yes" name="Sport" value="yes">
   <label for="yes">Yes</label><br>
   <input type="radio" id="No" name="Sport" value="No">
   <label for="No">No</label><br>
-
   <p style = "font-style: italic; font-weight: bold;">How do you obtain information?</p>  
   <input type="checkbox" id="Books" name="Books" value="Books">
   <label for="Books"> I read Books</label><br>
@@ -54,7 +47,6 @@ textarea {background-color: #FADBD8;}
   <label for="NewsMag"> I read Newspapers or Magazines</label><br>
   <input type="checkbox" id="Online" name="Online" value="Online">
   <label for="Online"> I use Internet</label><br><br>
-
   <p>Please choose a film genre you prefer watching?</p> 
   <label for="Genre">Choose a genre:</label>
   <select name="genre" id="genre">
@@ -65,14 +57,8 @@ textarea {background-color: #FADBD8;}
     <option value="romance">Romance</option>
   </select>
   <br><br>
-
-
   <input type="submit" value="Submit">
-
 </form> 
-
-<p>If you click the "Submit" button, the form-data will be sent to the database we will keep your ID and information anonymous</p>
-
-
+<p>Submit the form by clicking on "Submit" button. Don't worry your ID and information is safe with us and we do not share it with others.</p>
 </body>
 </html>
